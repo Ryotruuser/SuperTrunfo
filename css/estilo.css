@@ -1,0 +1,190 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    min-height: 854px;
+    background-image: url('https://preview.redd.it/s6y8njazna121.jpg?width=960&crop=smart&auto=webp&s=2a90573a4e62abe6731eacef3234d2f78b38a363');
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 5px 0;
+    text-shadow:
+      0 0 4px #00F,
+      0 0 11px #00F,
+      0 0 19px #00F;
+    
+}
+
+button, .button-jogar {
+    padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+h2 {
+    color: white;
+  text-shadow:
+      0 0 4px #ff8c00 ,
+      0 0 11px #ff8c00 ,
+      0 0 19px #ff8c00 ;
+}
+
+#carta-jogador, #carta-maquina {
+    width: 360px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    border-radius: 33px;
+}
+
+#carta-jogador h3 {
+    text-align: center;
+}
+
+.carta-imagem {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+}
+
+.carta-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.carta-status {
+    height: 160px;
+    margin: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.carta-status input {
+    margin: 20px 10px;
+}
+
+.win {
+    color: white;
+    text-shadow:
+      0 0 4px #0F0,
+      0 0 11px #0F0,
+      0 0 19px #0F0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weigth: bolder;
+    padding: 1rem;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0,0,0, 0.029);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+}
+
+.draw {
+    color: white;
+    text-shadow:
+      0 0 4px #000,
+      0 0 11px #000,
+      0 0 19px #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weigth: bolder;
+    padding: 1rem;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0,0,0, 0.029);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+}
+
+.defeat {
+    color: white;
+    text-shadow:
+      0 0 4px #F00,
+      0 0 11px #F00,
+      0 0 19px #F00;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weigth: bolder;
+    padding: 1rem;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0,0,0, 0.029);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+}
+
+.--spacing {
+    margin-left: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carta-subtitle {
+    z-index: 2;
+    position: absolute;
+    top: 16px;
+    left: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#cartas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carta-status p {
+    margin-bottom: 2rem;
+}
+
+#btnSortear {background-image: linear-gradient(to right, #0B486B 0%, #F56217  51%, #0B486B  100%)}
+#btnSortear {
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+ }
+ #btnSortear:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+ }
+ 
